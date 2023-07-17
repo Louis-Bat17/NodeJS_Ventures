@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tourist Map South Africa</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+  <style>
+    #map {
+      height: 600px;
+    }
+  </style>
+</head>
+<body>
+  <div id="map"></div>
+  <p id="distance"></p>
+  <p id="newdistance"></p>
+  <div>
+    <br>
+    <p>Location 1:</p>
+    <label for="latitude">Latitude:</label>
+    <input type="text" id="latitude1" value="-26.1076" />
+    <label for="longitude">Longitude:</label>
+    <input type="text" id="longitude1" value="28.0567" />
+    <br><p>Location 2:</p>
+    <label for="latitude">Latitude:</label>
+    <input type="text" id="latitude2" value="-33.9189" />
+    <label for="longitude">Longitude:</label>
+    <input type="text" id="longitude2" value="18.4233" />
+    <br><br>
+    <button id="calculatebtn">Calculate</button>
+    <br><br>
+
+  </div>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
